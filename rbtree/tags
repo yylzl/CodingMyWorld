@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLACK	rbtree.c	/^    BLACK = 0,$/;"	e	enum:color_e	file:
+CFLAGS	Makefile	/^CFLAGS := -g$/;"	m
+DEP_FILE	Makefile	/^DEP_FILE = .depends$/;"	m
+GEN_DEP	Makefile	/^GEN_DEP = $(CC) $(CFLAGS) $(INCLUDE) -MM$/;"	m
+OBJ	Makefile	/^OBJ := $(SRC:%.c=%.o)$/;"	m
+RED	rbtree.c	/^    RED$/;"	e	enum:color_e	file:
+SRC	Makefile	/^SRC := $(wildcard *.c)$/;"	m
+TARGET	Makefile	/^TARGET := rbtree$/;"	m
+color	rbtree.c	/^    color_t color;$/;"	m	struct:rbtree_node_s	file:
+color_e	rbtree.c	/^typedef enum color_e$/;"	g	file:
+color_t	rbtree.c	/^}color_t;$/;"	t	typeref:enum:color_e	file:
+delete	rbtree.c	/^    rbtree_insert_pt delete;$/;"	m	struct:rbtree_s	file:
+get_max_key	rbtree.c	/^uintptr_t get_max_key(rbtree_node_t *nil, rbtree_node_t *root)$/;"	f
+get_max_key_node	rbtree.c	/^rbtree_node_t * get_max_key_node(rbtree_node_t *nil, rbtree_node_t *root)$/;"	f
+get_min_key	rbtree.c	/^uintptr_t get_min_key(rbtree_node_t *nil, rbtree_node_t *root)$/;"	f
+get_min_key_node	rbtree.c	/^rbtree_node_t * get_min_key_node(rbtree_node_t *nil, rbtree_node_t *root)$/;"	f
+get_predecessor	rbtree.c	/^uintptr_t get_predecessor(rbtree_t *tree, rbtree_node_t *node)$/;"	f
+get_successor	rbtree.c	/^uintptr_t get_successor(rbtree_t *tree, rbtree_node_t *node)$/;"	f
+insert	rbtree.c	/^    rbtree_insert_pt insert;$/;"	m	struct:rbtree_s	file:
+key	rbtree.c	/^    uintptr_t key;$/;"	m	struct:rbtree_node_s	file:
+left	rbtree.c	/^    rbtree_node_t *left;$/;"	m	struct:rbtree_node_s	file:
+main	rbtree.c	/^int main(int argc, char *argv[])$/;"	f
+nil	rbtree.c	/^    rbtree_node_t *nil;$/;"	m	struct:rbtree_s	file:
+parent	rbtree.c	/^    rbtree_node_t *parent;$/;"	m	struct:rbtree_node_s	file:
+rbtree_delete	rbtree.c	/^void rbtree_delete(rbtree_t *tree, rbtree_node_t *node)$/;"	f
+rbtree_delete_pt	rbtree.c	/^typedef void (*rbtree_delete_pt) (rbtree_t *tree, rbtree_node_t *node);$/;"	t	file:
+rbtree_inorder_output	rbtree.c	/^void rbtree_inorder_output(rbtree_t *tree)$/;"	f
+rbtree_inorder_output_node	rbtree.c	/^void rbtree_inorder_output_node(rbtree_t *tree, rbtree_node_t *node)$/;"	f
+rbtree_insert	rbtree.c	/^void rbtree_insert(rbtree_t *tree, rbtree_node_t *node)$/;"	f
+rbtree_insert_pt	rbtree.c	/^typedef void (*rbtree_insert_pt) (rbtree_t *tree, rbtree_node_t *node);$/;"	t	file:
+rbtree_left_rotate	rbtree.c	/^void rbtree_left_rotate(rbtree_t *tree, rbtree_node_t *node)$/;"	f
+rbtree_node_black	rbtree.c	38;"	d	file:
+rbtree_node_copy_color	rbtree.c	41;"	d	file:
+rbtree_node_get_uncle_left	rbtree.c	46;"	d	file:
+rbtree_node_get_uncle_right	rbtree.c	45;"	d	file:
+rbtree_node_is_black	rbtree.c	40;"	d	file:
+rbtree_node_is_left_child	rbtree.c	43;"	d	file:
+rbtree_node_is_red	rbtree.c	39;"	d	file:
+rbtree_node_is_right_child	rbtree.c	44;"	d	file:
+rbtree_node_new	rbtree.c	/^rbtree_node_t * rbtree_node_new(rbtree_t *tree, uintptr_t key, color_t color)$/;"	f
+rbtree_node_red	rbtree.c	37;"	d	file:
+rbtree_node_s	rbtree.c	/^struct rbtree_node_s$/;"	s	file:
+rbtree_node_t	rbtree.c	/^typedef struct rbtree_node_s rbtree_node_t;$/;"	t	typeref:struct:rbtree_node_s	file:
+rbtree_right_rotate	rbtree.c	/^void rbtree_right_rotate(rbtree_t *tree, rbtree_node_t *node)$/;"	f
+rbtree_s	rbtree.c	/^struct rbtree_s$/;"	s	file:
+rbtree_search	rbtree.c	/^rbtree_node_t * rbtree_search(rbtree_t *tree, uintptr_t key)$/;"	f
+rbtree_search_pt	rbtree.c	/^typedef rbtree_node_t * (*rbtree_search_pt) (rbtree_t *tree, uintptr_t key);$/;"	t	file:
+rbtree_sentinel_init	rbtree.c	/^rbtree_node_t * rbtree_sentinel_init(void)$/;"	f
+rbtree_t	rbtree.c	/^typedef struct rbtree_s rbtree_t;$/;"	t	typeref:struct:rbtree_s	file:
+right	rbtree.c	/^    rbtree_node_t *right;$/;"	m	struct:rbtree_node_s	file:
+root	rbtree.c	/^    rbtree_node_t *root;$/;"	m	struct:rbtree_s	file:
+search	rbtree.c	/^    rbtree_search_pt search;$/;"	m	struct:rbtree_s	file:
+transplant	rbtree.c	/^void transplant(rbtree_t *tree, rbtree_node_t *x, rbtree_node_t *y)$/;"	f
