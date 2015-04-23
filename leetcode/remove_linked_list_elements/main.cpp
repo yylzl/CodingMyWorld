@@ -20,6 +20,11 @@ struct ListNode {
 class Solution {
     public:
         ListNode* removeElements(ListNode* head, int val) {
+            //neet recursion
+            if (head == NULL) return NULL;
+            head->next = removeElements(head->next, val);
+            return head->val == val ? head->next : head;
+#if 0
             ListNode *dummyHead = new ListNode(0);
             dummyHead->next = head;
             ListNode *cur = dummyHead->next;
@@ -38,6 +43,7 @@ class Solution {
                 cur = cur->next;
             }
             return dummyHead->next;
+#endif
         }        
 };
 
